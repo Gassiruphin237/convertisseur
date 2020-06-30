@@ -27,6 +27,8 @@ div#container
     border: none;
     cursor: pointer;
     width: 30%;
+    box-sizing: border-box;
+    transition: .3s;
 }
 input[type=button]:hover{
     background-color: white;
@@ -46,4 +48,8 @@ input[type=reset]:hover{
     background-color: white;
     color: #53af57;
     border: 1px solid #53af57;
+}
+input[type=text|number]{
+  text-align: center;
+  padding: 10px;
 }
