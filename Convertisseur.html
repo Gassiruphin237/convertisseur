@@ -7,27 +7,47 @@
 </head>
 <body>
 <form>
+
     <br/><br/><br/><br/><br/><br/><br/>
+
     <div id="container">
+
         <br/>
+
         <img src="argent.png" width="100" height="100" class="e">
-    <br/>
-    <label for="affiche">Entrez le Montatnt:</label><br/><br/>
-    <input type="number" id="affiche"><br/><br/>
-    <select id="monselect">
-        <option value="valeur1" selected></option>
-        <option value="valeur2" >Franc-cfa</option>
-        <option value="valeur3">Euro</option>
-    </select><br/><br/>
-        <select id="monselect">
-          <option value="valeur1" selected></option>
-          <option value="valeur2" >Euro</option>
-          <option value="valeur3">Franc-cfa</option>
-        </select><br/><br/>
-        <input type="button" value="Convertir"> <input type="reset" value="Effacer"><br/><br/>
+
+        <br/>
+
+        <label for="affiche">Entrez le Montant:</label>
+
+        <br/><br/>
+
+        <input type="number" id="montant">
+
+        <br/>
+        <br/>
+
+        <select id="sources">
+            <option disabled selected></option>
+        </select>
+
+        <br/>
+        <br/>
+
+        <select id="destinations">
+          <option disabled selected></option>
+        </select>
+
+        <br/><br/>
+
+        <input type="button" value="Convertir" id="convertir"> <input type="reset" value="Effacer"><br/><br/>
+
         Résultat:<br/><br/>
-        <input type="text"/>
+        <input type="text" readonly id="resultat" />
     </div>
 </form>
+
+<script type="text/javascript" src="src/js/main.js"></script>
+
 </body>
 </html>
